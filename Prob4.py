@@ -12,21 +12,18 @@ def find_area(A,B,d): # Don't change this line, it is for my own purposes
 
     # Your initial variables are named A, B and d and will have the values
     # you indicated below.
+    A, B, d = 1,2,3 
+tiny_bottom = A - d / 2
+tiny_height = (tiny_bottom) / A * B
 
+big_bottom = A - (d / 2) / 2
+big_height = (big_bottom) / A * B
 
-
-
-
-
-
-
-
-
-
-
-
+area = (big_bottom * big_height / 2 - tiny_bottom * tiny_height / 2) * 2
+if d>A :
+    print ("doesn't work")
     # Print whatever the final area is here! Just the value please, nothing else.
-    print()
+    print(area)
 
 
 
